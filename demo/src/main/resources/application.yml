@@ -3,4 +3,11 @@ server:
 
 spring:
   application:
-    name: controller1
+    name: APIGateway
+  cloud:
+    gateway:
+      routes:
+        -id: controller1
+        uri: http://localhost:8082
+        predicates:
+          -Path=/api/v2/**
