@@ -13,7 +13,7 @@ repositories {
 
 ext {
     junitVersion = '5.9.2'
-    set('springCloudVersion', "2023.0.1")
+    springCloudVersion = '2023.0.1'
 }
 
 sourceCompatibility = '17'
